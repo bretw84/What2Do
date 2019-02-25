@@ -2,5 +2,9 @@
 .DS_Store
 plugins
 platforms
+<<<<<<< HEAD
 node_modules
 simulation
+=======
+node_modules
+>>>>>>> d34d5ab92d5fd8afc778cd6fe7ae9571eb0125df

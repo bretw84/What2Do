@@ -1,12 +1,19 @@
 {
     "name": "com.what2do.app",
+<<<<<<< HEAD
     "displayName": "What2Do",
     "version": "1.0.0",
     "description": "Decision maker for the indecisive.",
+=======
+    "displayName": "HelloCordova",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+>>>>>>> d34d5ab92d5fd8afc778cd6fe7ae9571eb0125df
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+<<<<<<< HEAD
     "author": "Bret Williams",
     "license": "Apache-2.0",
     "dependencies": {
@@ -21,4 +28,8 @@
             "cordova-plugin-whitelist": {}
         }
     }
+=======
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0"
+>>>>>>> d34d5ab92d5fd8afc778cd6fe7ae9571eb0125df
 }
