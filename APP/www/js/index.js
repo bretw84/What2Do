@@ -113,20 +113,16 @@ var app = {
 				}
 			  
 				return array;
-y
 			}
 
-			var rand = shuffle(options);
-			console.log(rand);
-			var html = '';
-			rand.each = function() {
-				html += rand;
-			}
+			var random = shuffle(options);
 
 			//Show the winning choice after choosing
-			//to pick random from inputs, css #chosen span
-			$('#randomized').html('<div class="heading">Order:</div><span>'+html+'</span>');
-			
+			//to pick random from inputs, css #chosen span	
+			for(var i = 0; i < random.length; i++) {
+				$('#randomized ul').append('<li>'+random[i]+'</li>');
+			}
+
 			//Add border to winners circle
 			$('#randomized').addClass('visible');
 			
