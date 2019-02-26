@@ -27,38 +27,32 @@
             </div>
         </div>
         
-        <fieldset>
-            <legend><h1 style="padding-bottom:30px;text-align:center;font-size:30px;font-weight:900;">What To Do?</h1></legend>
+        <h1 style="padding-bottom:30px;text-align:center;font-size:30px;font-weight:900;">What To Do?</h1>
+                    
+        <input type="text" name="option" placeholder="Enter Option" id="options"/>
+        <input type="submit" name="addItem" value="+" class="btn btn-success" id="addItem"/>
+        
+        <hr>
+                
+        <h4>Options:</h4> 
             
-            <strong>Enter Options:</strong><br>
-            
-            <input type="text" name="option" placeholder="Enter Option" id="options"/>
-            <input type="submit" name="submit" value="+" class="btn btn-success" id="submit"/>
-        
-        </fieldset>
-        
-        <br><hr>
-        
-        <fieldset>
-        
-            <legend>Current Options - <input type="submit" id="clear" class="btn btn-danger" value="Clear"/></legend>
-            
-            <div id="options-div"></div>
-            <div id="no-options"><strong>No Options Yet.</strong></div>
-        
-        </fieldset>
-        
-        <div><input type="submit" name="choose" id="choose" class="btn btn-success" value="MAKE A CHOICE!!!"/></div>
-        
+        <p id="options-div"></p>
+        <input type="submit" id="clear" class="btn btn-danger" value="Clear"/></legend>
+        <p id="no-options"><em>No Options Yet.</em></p>
+
+        <div class="row-fluid">
+            <div class="span6"><input type="submit" name="choose" id="choose" class="btn btn-success" value="Choose One"/></div>
+            <div class="span6"><input type="submit" name="randomize" id="randomize" class="btn btn-success" value="Randomize Options"/></div>
+        </div>  
         <div id="chosen"></div>
+        <div id="randomized"></div>
         
     </div>
       
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+    <script src="cordova.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script>app.initialize();</script>
 </body>
 
 </html>

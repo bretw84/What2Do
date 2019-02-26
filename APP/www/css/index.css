@@ -33,42 +33,76 @@
 /* END PRELOADER */
 
 body {
-	background:#222222;	
-	font-size:18px;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    background:#444;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
 }
 
 .container-fluid {
-	max-width:500px;
+    max-width:500px;
+    margin:0 auto;
 	background:#EEEEEE;
 	padding:10px;
-	border:2px solid #000000;
+    border:2px solid #000000;
+    box-shadow: 0 0 5px 0 #000;
 	min-height:100%;
 }
 
-#submit {
-	font-size:20px;
-	font-weight:900;
+hr {
+    margin: 10px 0;
+    border: 0;
+    border: 1px solid #222;
 }
 
-#choose {
+#addItem {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    position: relative;
+    top: -5px;
+}
+
+#choose,#randomize {
 	margin-top:25px;
 	display:none;
 	width:100%;
 }
 
-#chosen {
-	font-size:32px;
-	margin-top:10px;
-	text-align:center;
+#chosen,
+#randomized {
+	font-size:28px;
+    text-align:center;
+    margin-top:10px;
 }
 
-#chosen span {
+#chosen span,
+#randomized span {
 	color:#990000;
-	font-weight:900;
-	text-transform:uppercase;
+    font-weight:700;
+    font-size:24px;
 }
 
-#clear {font-size:14px;}
+.heading {margin-bottom:10px;}
+
+.visible {
+    border:1px solid #000000;
+    padding:20px;
+}
+
+#clear {font-size:14px;display:none;}
+
+#no-options{
+    font-weight:normal;
+    font-size:small;
+    color:#990000;
+}
 
 input[type=submit] {
 	cursor:pointer;
@@ -88,19 +122,6 @@ input[type=text] {
 
 @media screen and (max-width: 40.063em) {
 	.container-fluid {max-width:none !important;}
-}
-
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
 }
 
 /* Portrait layout (default) */
